@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/lightGray">
+
+    <TextView
+        android:id="@+id/namaKota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:text="Nama Kota"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"/>
+
+    <TextView
+        android:id="@+id/suhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="@color/secondaryColor"
+        android:text="Suhu"
+        android:layout_below="@id/namaKota"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"/>
+
+    <TextView
+        android:id="@+id/deskripsiSuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/primaryColor"
+        android:text="Deskripsi"
+        android:layout_below="@id/suhu"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"/>
+
+    <ImageView
+        android:id="@+id/iconSuhu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/deskripsiSuhu"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Icon Suhu"
+        android:background="@drawable/icon_border"
+        android:padding="8dp"
+        android:elevation="4dp"/>
+
+</RelativeLayout>
